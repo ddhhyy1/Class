@@ -12,13 +12,11 @@
    		
    		</insert>
    
-   </mapper>
+  
    
    
-      <mapper resulttype="member">
-   		<insert id="joinOk">
-   			INSERT INTO member (mid, mpw, mname, memail) VALUES(#{param1},#{param2],#{param3],#{param4])
-   		
-   		</insert>
+   		<select id="memberList" resultType="com.nangcho.test.dto.MemberDto">
+   			select * from member 	
+   		</select>
    
    </mapper>
